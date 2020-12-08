@@ -244,4 +244,115 @@ h3 {
     padding-right: 20px;
     padding-left: 20px;
   }
+
+
+  .circle {
+    display: none;
+    
+  }
+  
+  #logo {
+    
+  }
+  
+  #logo h2 {
+    
+  }
+  
+  a {
+    
+  }
+  
+  .nav {
+   
+  }
+  
+  .nav .email {
+    
+  }
+  
+  .nav .phone {
+    
+  }
+  
+  
+  .hidden {
+    
+  }
+  
+  #hero {
+    display: none;
+  }
+  
+  h1 {
+    display: none;
+  }
+  
+  #description {
+    display: none;
+  }
+  
+  #description .description-text, .description-number {
+    display: none;
+  }
+  
+  .description-number {
+    display: none;
+  }
+  
+  .description-number a {
+    display: none;
+  }
+  
+  .description-text {
+    display: none;
+  }
+  
+  .description-text p {
+    display: none;
+  }
+  
+  #services {
+    display: none;
+  }
+  
+  .services {
+    display: none;
+  }
+  
+  .service {
+    display: none;
+  }
+  
+  #service-1 {
+    display: none;
+  }
+  
+  #service-2 {
+    display: none;
+  }
+  
+  #service-3 {
+    display: none;
+  }
+  
+  #service-4 {
+    display: none;
+  }
+  
+  h3 {
+    display: none;
+  }
+  
+  .service p {
+    display: none;
+  }
+  
+  #description-2 {
+    display: none;
+  }
+  
+  #description-2 p {
+    display: none;
+  }
 }
