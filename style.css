@@ -3,6 +3,38 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 100%;
+}
+
+#mehka-voda {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+#mehka-voda h2 {
+  margin-bottom: 0;
+}
+
+#mehka-voda p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#voda-slika {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./slike/slika\ \(11\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  margin-top: 20vh;
+}
+
 .circle {
   height: 180px;
   width: 180px;
@@ -11,6 +43,15 @@ html, body {
   position: absolute;
   right: 100px;
   top: 15%;
+}
+
+.circle2 {
+  height: 180px;
+  width: 180px;
+  background-color: rgb(235, 235, 91);
+  border-radius: 50%;
+  display: none;
+  
 }
 
 #logo {
@@ -392,4 +433,38 @@ h3 {
     font-size: 1.5rem;
     font-weight: 500;
   }
+
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 100%;
+  }
+  
+  #mehka-voda {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  
+  #mehka-voda h2 {
+    margin-bottom: 0;
+  }
+  
+  #mehka-voda p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  #voda-slika {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./slike/slika\ \(11\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    margin-top: 5vh;
+  }
+
 }
