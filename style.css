@@ -11,7 +11,6 @@ html, body {
   position: absolute;
   right: 100px;
   top: 15%;
-  
 }
 
 #logo {
@@ -209,9 +208,6 @@ h3 {
 
 
 @media only screen and (max-width : 1024px) {
-  p {
-    color: red;
-  }
 
   .services {
     display: flex;
@@ -247,12 +243,18 @@ h3 {
 
 
   .circle {
-    display: none;
-    
+    height: 140px;
+    width: 140px;
+    background-color: rgb(235, 235, 91);
+    border-radius: 50%;
+    position: static;
+    right: 100px;
+    top: 15%;
+    margin-bottom: 60px;
   }
   
   #logo {
-    
+    left: 20px;
   }
   
   #logo h2 {
@@ -264,52 +266,95 @@ h3 {
   }
   
   .nav {
-   
+    padding: 5px 20px;
+    text-align: end;
+    display: flex;
+    flex-flow: column;
   }
   
   .nav .email {
-    
+    position: relative;
+    margin: 0;
   }
+
+  .nav .phone span::after {
+    content: ' ';
+    display: block;
+  }
+ 
   
   .nav .phone {
-    
+    position: relative;
+    margin: 0;
   }
   
   
   .hidden {
-    
+    visibility: hidden;
+    display: none;
   }
   
   #hero {
-    display: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(9\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
   }
   
   h1 {
-    display: none;
+    margin-top: 120px;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 130%;
   }
   
   #description {
-    display: none;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    justify-content: space-evenly;
+    flex-basis: 0;
   }
   
   #description .description-text, .description-number {
-    display: none;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 200%;
   }
   
+  .description-number span::after {
+    content: ' ';
+    display: block;
+  }
+
   .description-number {
-    display: none;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
   }
   
-  .description-number a {
-    display: none;
+  .description-number a {   
+    font-size: 2.5rem;
   }
   
   .description-text {
-    display: none;
+    position: relative;
+    margin: auto;
+    text-align: center;
   }
   
   .description-text p {
-    display: none;
+
+    font-size: 1.7rem;
+    padding: 20px 20px;
   }
   
   #services {
