@@ -1,0 +1,248 @@
+html, body {
+  margin: 0;
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.circle {
+  height: 180px;
+  width: 180px;
+  background-color: rgb(235, 235, 91);
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 15%;
+  
+}
+
+#logo {
+  height: 20vh;
+  background-color: #111111;
+  position: absolute;
+  left: 100px;
+}
+
+#logo h2 {
+  color: #ffffff;
+  line-height: 100%;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  margin-top: 13vh;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.nav {
+  padding: 20px 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.nav .email {
+  position: relative;
+  margin: auto;
+}
+
+.nav .phone {
+  position: relative;
+  margin: auto 0;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(9\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 100%;
+}
+
+#description {
+  display: flex;
+  flex-flow: row;
+  height: 50vh;
+  justify-content: space-evenly;
+  flex-basis: 0;
+}
+
+#description .description-text, .description-number {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  line-height: 220%;
+}
+
+.description-number {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.description-number a {
+  font-size: 2.5rem;
+}
+
+.description-text {
+  position: relative;
+  margin: auto;
+}
+
+.description-text p {
+  font-size: 1.7rem;
+  padding-left: 200px;
+}
+
+#services {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.services {
+  display: flex;
+  flex-flow: row;
+  height: 60vh;
+  flex-basis: 0;
+}
+
+.service {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+#service-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(10\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#service-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(6\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#service-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(2\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#service-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./slike/slika\ \(7\).jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 100%;
+  width: 60%;
+}
+
+.service p {
+  line-height: 200%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 90%;
+  margin-top: -40px;
+  opacity: 0.85;
+}
+
+#description-2 {
+  padding: 20px 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#description-2 p {
+  -webkit-columns: 500px 2;
+  -moz-columns:  500px 2;
+  columns: 500px 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width : 1024px) {
+  p {
+    color: red;
+  }
+
+  .services {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    flex-basis: 0;
+  }
+  #service-1, #service-2, #service-3, #service-4  {
+    margin: 0;
+    margin-top: 20px;
+    height: 30vh;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 100%;
+    width: 80%;
+  }
+  .service p {
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 90%;
+    margin-top: -20px;
+    opacity: 0.85;
+  }
+  #services {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
