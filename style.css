@@ -241,7 +241,6 @@ h3 {
     padding-left: 20px;
   }
 
-
   .circle {
     height: 140px;
     width: 140px;
@@ -356,46 +355,19 @@ h3 {
     padding: 0 20px;
   }
   
-  #services {
-    
-  }
-  
-  .services {
-   
-  }
-  
-  .service {
-  
-  }
-  
-  #service-1 {
-   
-  }
-  
-  #service-2 {
-    
-  }
-  
-  #service-3 {
-   
-  }
-  
-  #service-4 {
-    
-  }
-  
-  h3 {
-  }
-  
-  .service p {
-    
-  }
-  
   #description-2 {
-    display: none;
+    padding: 20px 20px;
+    font-family: 'Raleway', sans-serif;
   }
   
   #description-2 p {
-    display: none;
+    -webkit-columns: 500px 2;
+    -moz-columns:  500px 2;
+    columns: 500px 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 }
