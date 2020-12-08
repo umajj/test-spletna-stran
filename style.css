@@ -261,6 +261,23 @@ h3 {
   font-weight: 500;
 }
 
+#carousel {
+  width: 70vw;
+  margin: auto;
+}
+.slider div {
+  width: 100%;
+  margin: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider div p{
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 @media only screen and (max-width : 1024px) {
 
@@ -467,6 +484,11 @@ h3 {
     margin-top: 5vh;
   }
 
+  #carousel {
+    width: 90vw;
+    margin: auto;
+  }
+
 }
 
 
@@ -487,7 +509,8 @@ h3 {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 7px;
-
+  width: 70vw;
+  margin: auto;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -525,4 +548,8 @@ h3 {
     flex: 100%;
     max-width: 100%;
   }
+
+  .row {
+    width: 90vw;
+  }  
 }
