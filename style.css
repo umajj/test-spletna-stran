@@ -498,8 +498,22 @@ h3 {
   }
 
   #carousel {
-    width: 90vw;
+    width: 80vw;
     margin: auto;
+  }
+
+  .slider div {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider div p{
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
 }
