@@ -3,6 +3,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 h2 {
   font-size: 6rem;
   font-weight: 800;
@@ -171,6 +172,11 @@ h1 {
 #services {
   padding-right: 100px;
   padding-left: 100px;
+  display: none;
+}
+
+#pisarneText {
+  display: none;
 }
 
 .services {
@@ -180,6 +186,12 @@ h1 {
   flex-basis: 0;
 }
 
+
+
+.service:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .service {
   width: 100%;
   display: flex;
@@ -187,6 +199,7 @@ h1 {
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  transition: transform .4s;
 }
 
 #service-1 {
@@ -553,3 +566,5 @@ h3 {
     width: 90vw;
   }  
 }
+
+

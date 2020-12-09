@@ -19,11 +19,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
     crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
 
-  <div id="logo">
+  <div id="logo" class="animate__animated animate__fadeInDownBig">
     <h2>ČISTILNI<br>SERVIS</h2>
   </div>
 
@@ -41,8 +44,8 @@
   </div>
 
   <section id="hero">
-    <h1>Vrhunsko čiščenje<br>moderna oprema</h1>
-    <span class="circle"></span>
+    <h1 class="animate__animated animate__fadeIn animate__slow">Vrhunsko čiščenje<br>moderna oprema</h1>
+    <span class="circle animate__animated animate__bounceIn animate__delay-1s"></span>
   </section>
 
   <section id="description">
@@ -72,8 +75,8 @@
     </div>
     <div class="services">
       <div id="service-3" class="service">
-        <h3>pisarne</h3>
-        <p>
+        <h3 id="pisarne">pisarne</h3>
+        <p id="textPisarne">
           Za steklene površine. Naš stroj vodo zmehča, zato ne
           potrebujemo čistil! Stekla so očiščena bolj temeljito kot pri
           drugih tehnikah. Pričakujte vrhunske rezultate.
@@ -196,6 +199,31 @@
         ]
       });
     });
+
+
+    $(window).scroll(function () {
+      var hT = $('#description').offset().top,
+        hH = $('#description').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      //console.log((hT - wH), wS);
+      if (wS > (hT + hH - wH)) {
+        $('#services').fadeIn(2000);
+      }
+    });
+
+    $(window).scroll(function () {
+      var hT = $('#service-3').offset().top,
+        hH = $('#service-3').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      //console.log((hT - wH), wS);
+      if (wS > (hT + hH - wH)) {
+        $('#textPisarne').slideDown("slow");
+      }
+    });
+
+
   </script>
 </body>
 
